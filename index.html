@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+       
+        <div class="card">
+            <div class="card-header">
+              <h1>GPA CALCULATOR</h1>
+              <div class="card" style="width: 78rem;">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">O -> 10 points</li>
+                  <li class="list-group-item">A+ -> 9 points</li>
+                  <li class="list-group-item">A -> 8 points</li>
+                  <li class="list-group-item">B+ -> 7 points</li>
+                  <li class="list-group-item">B -> 6 points</li>
+                  <li class="list-group-item">C -> 5 points</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-body">
+                <form onsubmit="event.preventDefault(); calculate();">
+                    
+                    <table class="table table-striped table-dark">
+                        <thead>
+                          <tr>
+                            <th scope="col">S.No</th>
+                            <th scope="col">Subject</th>
+                            <th scope="col">Credit</th>
+                            <th scope="col">Grade</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>  <div class="form-group mx-0 sm-1 mb-1">
+                                <input type="text" class="form-control" id="inputPassword2" placeholder="Subject">
+                              </div></td>
+                            <td>
+                                 <div class="form-group mx-10 sm-1000 mb-">
+                                <input type="text" class="form-control" id="c1" placeholder="Credit">
+                              </div></td>
+                            <td>
+                                <select class="dropdownContent" id="g1">
+                                <option value="O">O</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="U">U</option>
+                                </select>
+
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>  <div class="form-group mx-0 sm-1 mb-1">
+                                <input type="text" class="form-control" id="inputPassword2" placeholder="Subject">
+                              </div></td>
+                            <td>
+                                 <div class="form-group mx-10 sm-1000 mb-">
+                                <input type="text" class="form-control" id="c2" placeholder="Credit">
+                              </div></td>
+                            <td>
+                                <select name="cars" id="g2">
+                                <option value="O">O</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="U">U</option>
+                                </select>
+
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>  <div class="form-group mx-0 sm-1 mb-1">
+                                <input type="text" class="form-control" id="inputPassword2" placeholder="Subject">
+                              </div></td>
+                            <td>
+                                 <div class="form-group mx-10 sm-1000 mb-">
+                                <input type="text" class="form-control" id="c3" placeholder="Credit">
+                              </div></td>
+                            <td>
+                                <select name="cars" id="g3">
+                                <option value="O">O</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="U">U</option>
+                                </select>
+
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>  <div class="form-group mx-0 sm-1 mb-1">
+                                <input type="text" class="form-control" id="inputPassword2" placeholder="Subject">
+                              </div></td>
+                            <td>
+                                 <div class="form-group mx-10 sm-1000 mb-">
+                                <input type="text" class="form-control" id="c4" placeholder="Credit">
+                              </div></td>
+                            <td>
+                                <select name="cars" id="g4">
+                                <option value="O">O</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="U">U</option>
+                                </select>
+
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">5</th>
+                            <td>  <div class="form-group mx-0 sm-1 mb-1">
+                                <input type="text" class="form-control" id="inputPassword2" placeholder="Subject">
+                              </div></td>
+                            <td>
+                                 <div class="form-group mx-10 sm-1000 mb-">
+                                <input type="text" class="form-control" id="c5" placeholder="Credit">
+                              </div></td>
+                            <td>
+                                <select name="cars" id="g5">
+                                <option value="O">O</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="U">U</option>
+                                </select>
+
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">6</th>
+                            <td>  <div class="form-group mx-0 sm-1 mb-1">
+                                <input type="text" class="form-control" id="inputPassword2" placeholder="Subject">
+                              </div></td>
+                            <td>
+                                 <div class="form-group mx-10 sm-1000 mb-">
+                                <input type="text" class="form-control" id="c6" placeholder="Credit">
+                              </div></td>
+                            <td>
+                                <select name="cars" id="g6">
+                                <option value="O">O</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="U">U</option>
+                                </select>
+
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">7</th>
+                            <td>  <div class="form-group mx-0 sm-1 mb-1">
+                                <input type="text" class="form-control" id="inputPassword2" placeholder="Subject">
+                              </div></td>
+                            <td>
+                                 <div class="form-group mx-10 sm-1000 mb-">
+                                <input type="text" class="form-control" id="c7" placeholder="Credit">
+                              </div></td>
+                            <td>
+                                <select name="cars" id="g7">
+                                <option value="O">O</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="U">U</option>
+                                </select>
+
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">8</th>
+                            <td>  <div class="form-group mx-0 sm-1 mb-1">
+                                <input type="text" class="form-control" id="inputPassword2" placeholder="Subject">
+                              </div></td>
+                            <td>
+                                 <div class="form-group mx-10 sm-1000 mb-">
+                                <input type="text" class="form-control" id="c8" placeholder="Credit">
+                              </div></td>
+                            <td>
+                                <select name="cars" id="g8">
+                                <option value="O">O</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="U">U</option>
+                                </select>
+
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">9</th>
+                            <td>  <div class="form-group mx-0 sm-1 mb-1">
+                                <input type="text" class="form-control" id="inputPassword2" placeholder="Subject">
+                              </div></td>
+                            <td>
+                                 <div class="form-group mx-10 sm-1000 mb-">
+                                <input type="text" class="form-control" id="c9" placeholder="Credit">
+                              </div></td>
+                            <td>
+                                <select name="cars" id="g9">
+                                <option value="O">O</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="U">U</option>
+                                </select>
+
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">10</th>
+                            <td>  <div class="form-group mx-0 sm-1 mb-1">
+                                <input type="text" class="form-control" id="inputPassword2" placeholder="Subject">
+                              </div></td>
+                            <td>
+                                 <div class="form-group mx-10 sm-1000 mb-">
+                                <input type="text" class="form-control" id="c10" placeholder="Credit">
+                              </div></td>
+                            <td>
+                                <select name="cars" id="g10">
+                                <option value="O">O</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="U">U</option>
+                                </select>
+
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">11</th>
+                            <td>  <div class="form-group mx-0 sm-1 mb-1">
+                                <input type="text" class="form-control" id="inputPassword2" placeholder="Subject">
+                              </div></td>
+                            <td>
+                                 <div class="form-group mx-10 sm-1000 mb-">
+                                <input type="text" class="form-control" id="c11" placeholder="Credit">
+                              </div></td>
+                            <td>
+                                <select name="cars" id="g11">
+                                <option value="O">O</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="U">U</option>
+                                </select>
+
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">12</th>
+                            <td>  <div class="form-group mx-0 sm-1 mb-1">
+                                <input type="text" class="form-control" id="inputPassword2" placeholder="Subject">
+                              </div></td>
+                            <td>
+                                 <div class="form-group mx-10 sm-1000 mb-">
+                                <input type="text" class="form-control" id="c12" placeholder="Credit">
+                              </div></td>
+                            <td>
+                                <select name="cars" id="g12">
+                                <option value="O">O</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="U">U</option>
+                                </select>
+
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    <button type="submit" onclick="calculate()" class="btn btn-danger">Calculate</button>
+                    
+                    <div id="result" class="col-sm-4">
+                       <h1 display-1></h1>
+                      </div>
+                   </form>
+             
+            </div>
+          </div>
+          <div class="card text-center">
+            <div class="card-header">
+              NATIONAL ENGINEERING COLLEGE
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">COMPUTER SCIENCE & ENGINEERING</h5>
+              <p class="card-text">Created by ABISHEK G</p>
+              <p>&copy; 2024 My Awesome Website</p>
+        <p>Contact: <a href="mailto:2112033@nec.edu.in">2112033@nec.edu.in</a></p>
+              <a href="https://necexams.com/" class="btn btn-danger">RESULT</a>
+            </div>
+            <div class="card-footer text-body-secondary">
+            </div>
+          </div>
+        
+    </div>
+    
+    <script src="calculator.js"></script>
+</body>
+</html>
